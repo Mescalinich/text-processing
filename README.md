@@ -11,3 +11,5 @@ Two forms must be implemented:
 2. File upload field to select and upload file and "Upload" button. Server side file processing
 
 _must be prepared mechanism to add new file formats_
+
+**Task has been done in 2015**

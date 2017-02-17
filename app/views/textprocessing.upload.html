@@ -1,0 +1,20 @@
+<h1>Upload (backend) test <small>Form with post upload processing at backend</small></h1>
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="alert alert-danger {{show_errors}}" role="alert">{{errors}}</div>
+
+        <form enctype="multipart/form-data" action="/textprocessing/fileupload" method="POST">
+            <input type="hidden" name="MAX_FILE_SIZE" value="{{max_upload_filesize}}" />
+            <div class="form-group">
+                <label for="exampleInputFile">Your file</label>
+                <input type="file" name="inputfile" id="exampleInputFile">
+                <p class="help-block">
+                    Avaible file formats: {{file_formats}}<br />
+                    Max upload file size: {{max_upload_filesize}} Bytes
+                </p>
+            </div>
+            <button type="submit" class="btn btn-default">Upload</button>
+        </form>
+    </div>
+</div>
